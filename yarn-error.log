@@ -1,0 +1,43 @@
+Arguments: 
+  /usr/bin/node /usr/local/bin/yarn add -D hardhat-deploy hardhat-deploy-ethers ethers chai chai-ethers mocha @types/chai @types/mocha @types/node typescript ts-node dotenv
+
+PATH: 
+  /usr/lib/jdk1.8.0_221/bin:/home/emma/.cargo/bin:/home/emma/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/emma/WorkSpaces/bin:/usr/local/go/bin
+
+Yarn version: 
+  1.22.4
+
+Node version: 
+  17.9.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: https://registry.npm.taobao.org/@nomiclabs%2fhardhat-ethers: tunneling socket could not be established, cause=connect ECONNREFUSED 192.168.1.3:8089
+      at ClientRequest.onError (/usr/local/lib/node_modules/yarn/lib/cli.js:152234:17)
+      at Object.onceWrapper (node:events:642:26)
+      at ClientRequest.emit (node:events:527:28)
+      at Socket.socketErrorListener (node:_http_client:454:9)
+      at Socket.emit (node:events:527:28)
+      at emitErrorNT (node:internal/streams/destroy:164:8)
+      at emitErrorCloseNT (node:internal/streams/destroy:129:3)
+      at processTicksAndRejections (node:internal/process/task_queues:83:21)
+
+npm manifest: 
+  {
+    "devDependencies": {
+      "@nomiclabs/hardhat-ethers": "^2.0.6",
+      "@nomiclabs/hardhat-waffle": "^2.0.3",
+      "chai": "^4.3.6",
+      "ethereum-waffle": "^3.4.4",
+      "ethers": "^5.6.9",
+      "hardhat": "^2.9.9"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
